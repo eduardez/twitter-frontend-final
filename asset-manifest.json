@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/my-twitter-clone-react/static/css/main.02d78d43.chunk.css",
-    "main.js": "/my-twitter-clone-react/static/js/main.32a6f07a.chunk.js",
-    "main.js.map": "/my-twitter-clone-react/static/js/main.32a6f07a.chunk.js.map",
-    "runtime-main.js": "/my-twitter-clone-react/static/js/runtime-main.66e3195b.js",
-    "runtime-main.js.map": "/my-twitter-clone-react/static/js/runtime-main.66e3195b.js.map",
-    "static/css/2.95f25948.chunk.css": "/my-twitter-clone-react/static/css/2.95f25948.chunk.css",
-    "static/js/2.9d1878b6.chunk.js": "/my-twitter-clone-react/static/js/2.9d1878b6.chunk.js",
-    "static/js/2.9d1878b6.chunk.js.map": "/my-twitter-clone-react/static/js/2.9d1878b6.chunk.js.map",
-    "static/js/3.53986d27.chunk.js": "/my-twitter-clone-react/static/js/3.53986d27.chunk.js",
-    "static/js/3.53986d27.chunk.js.map": "/my-twitter-clone-react/static/js/3.53986d27.chunk.js.map",
-    "index.html": "/my-twitter-clone-react/index.html",
-    "static/css/2.95f25948.chunk.css.map": "/my-twitter-clone-react/static/css/2.95f25948.chunk.css.map",
-    "static/css/main.02d78d43.chunk.css.map": "/my-twitter-clone-react/static/css/main.02d78d43.chunk.css.map",
-    "static/js/2.9d1878b6.chunk.js.LICENSE.txt": "/my-twitter-clone-react/static/js/2.9d1878b6.chunk.js.LICENSE.txt",
-    "static/media/bird.7a65b904.png": "/my-twitter-clone-react/static/media/bird.7a65b904.png"
+    "main.css": "/twitter-frontend-final/static/css/main.02d78d43.chunk.css",
+    "main.js": "/twitter-frontend-final/static/js/main.7c70304b.chunk.js",
+    "main.js.map": "/twitter-frontend-final/static/js/main.7c70304b.chunk.js.map",
+    "runtime-main.js": "/twitter-frontend-final/static/js/runtime-main.b705732f.js",
+    "runtime-main.js.map": "/twitter-frontend-final/static/js/runtime-main.b705732f.js.map",
+    "static/css/2.95f25948.chunk.css": "/twitter-frontend-final/static/css/2.95f25948.chunk.css",
+    "static/js/2.c8651f45.chunk.js": "/twitter-frontend-final/static/js/2.c8651f45.chunk.js",
+    "static/js/2.c8651f45.chunk.js.map": "/twitter-frontend-final/static/js/2.c8651f45.chunk.js.map",
+    "static/js/3.7f6d102f.chunk.js": "/twitter-frontend-final/static/js/3.7f6d102f.chunk.js",
+    "static/js/3.7f6d102f.chunk.js.map": "/twitter-frontend-final/static/js/3.7f6d102f.chunk.js.map",
+    "index.html": "/twitter-frontend-final/index.html",
+    "static/css/2.95f25948.chunk.css.map": "/twitter-frontend-final/static/css/2.95f25948.chunk.css.map",
+    "static/css/main.02d78d43.chunk.css.map": "/twitter-frontend-final/static/css/main.02d78d43.chunk.css.map",
+    "static/js/2.c8651f45.chunk.js.LICENSE.txt": "/twitter-frontend-final/static/js/2.c8651f45.chunk.js.LICENSE.txt",
+    "static/media/bird.7a65b904.png": "/twitter-frontend-final/static/media/bird.7a65b904.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.66e3195b.js",
+    "static/js/runtime-main.b705732f.js",
     "static/css/2.95f25948.chunk.css",
-    "static/js/2.9d1878b6.chunk.js",
+    "static/js/2.c8651f45.chunk.js",
     "static/css/main.02d78d43.chunk.css",
-    "static/js/main.32a6f07a.chunk.js"
+    "static/js/main.7c70304b.chunk.js"
   ]
 }
