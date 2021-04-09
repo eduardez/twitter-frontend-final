@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Card, CardTitle, Badge, CardBody, Table, Alert } from 'reactstrap';
+import { CardTitle, Badge, Table, Alert } from 'reactstrap';
 import '../../styles.css';
-
-import { AiOutlineHeart, AiOutlineRetweet } from 'react-icons/ai';
-import { BsChat, BsUpload } from "react-icons/bs";
+import '../css/PostList.css'
+import PostItem from './PostItem'
 
 import { getAllPosts } from "../../utils/apicalls.js";
-import { getDateInStrFormat } from "../../utils/utils.js";
 
-export default function PostList(){
+export default function PostList(props){
 
   const [posts, setPosts] = useState([]);
 
@@ -18,50 +16,25 @@ export default function PostList(){
     });
   }
 
+  const toggleClass = (elem_id, new_class) =>{
+    var div_heart = document.getElementById(elem_id);
+    div_heart.classList.toggle('activado');
+  }
+  
   useEffect(() =>{
     getPosts();
   },[]);
 
   return (
     <div>
-      <CardTitle tag="center"><Alert color="primary"><strong>Posts publicados </strong><Badge pill>{posts.length}</Badge></Alert></CardTitle>
-      <Table>
-        <tbody>
-          { posts.map((post, index) => {
-            return(
-              <div>
-                  <Row>
-                    <Col>
-                      <Card>
-                        <CardBody>
-                          <Row><Col><strong><img src={post.image} alt="Img"/> {post.user}</strong></Col></Row>
-                          <Row>
-                            <Col>
-                              {post.message}
-                            </Col>
-                          </Row>
-                          <Row>
-                            <Col align="left" xs= "5">
-                              <Row>
-                                <Col xs="2"><BsChat /></Col>
-                                <Col xs="2"><AiOutlineRetweet /><small>{Math.floor((Math.random() * 10) + 1)}</small></Col>
-                                <Col xs="2"><AiOutlineHeart /><small>{Math.floor((Math.random() * 100) + 1)}</small></Col>
-                                <Col xs="2"><BsUpload/></Col>
-                              </Row>
-                            </Col>
-                            <Col align="right">
-                              <small>{getDateInStrFormat(new Date(post.publicationdate))}</small>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                  <br/>
-              </div>)
-            })}
-          </tbody>
-        </Table>
-      </div>
+    <CardTitle tag="center"><Alert color="primary"><strong>Posts publicados </strong><Badge pill>{posts.length}</Badge></Alert></CardTitle>
+    <Table>
+      <tbody>
+        { posts.map((post, index) => {
+          return <PostItem post={post} indice={index}/>
+          })}
+        </tbody>
+      </Table>
+    </div>
     );
 }

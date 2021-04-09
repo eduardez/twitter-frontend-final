@@ -16,11 +16,13 @@ function getMyPosts(email) {
   return API.get('/posts/all/'+email).then(res => res.data);
 }
 
-function postNewPost(email, user, image, message) {
+function postNewPost(email, user, retuit, corazon, image, message) {
   return API.post('/posts', {
     email,
     user,
     image,
+    retuit,
+    corazon,
     message}).then(result => result.data);
 }
 

@@ -1,0 +1,19 @@
+.edit_card_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.edit_buttons{
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    width: min-content;
+    border: 1px #dfdfdf solid;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: none;
+}
+
+.edit_buttons Button{
+    border: none;
+}

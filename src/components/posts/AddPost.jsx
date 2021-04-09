@@ -9,18 +9,15 @@ export default function AddPost(props){
 
   const addPost = (e) => {
     e.preventDefault();
-    //Save post in database with post api call
-    postNewPost(sessionStorage.getItem('email'),sessionStorage.getItem('name'), sessionStorage.getItem('image'), message)
+    let retuits = Math.floor((Math.random() * 10) + 1)
+    let corazones = Math.floor((Math.random() * 10) + 1)
+    postNewPost(sessionStorage.getItem('email'),sessionStorage.getItem('name'), retuits, corazones, sessionStorage.getItem('image'), message)
       .then((res) => checkPOSTNewPost(res));
   }
 
-  //Check the response from the server
   const checkPOSTNewPost = (res) => {
     if (res === "OK"){
-      //TODO Show Modal when a new post is added
       props.updateMyPosts();
-    }else{
-      //TODO Show Modal when an error adding a new post occurs
     }
   }
 

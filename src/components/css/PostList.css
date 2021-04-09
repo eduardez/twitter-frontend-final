@@ -1,0 +1,68 @@
+
+.fila_atributos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.fila_numeros{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.retuit.activado svg{
+    fill: green;
+}
+
+.corazon.activado svg{
+    fill: red;
+}
+
+.retuit.activado svg{
+    animation: rotating 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.corazon.activado svg{
+    animation: biglittle 0.2s cubic-bezier(.77,0,.18,1);
+}
+
+.fila_fecha{
+    text-align: end;
+    padding-right: 15px;
+    width: 40%;
+}
+
+.elemento_atributo{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.iconooo{
+    fill: tomato;
+}
+
+@keyframes biglittle /* Safari and Chrome */ {
+    from {
+      -webkit-transform: scale(0.4);
+      -o-transform: scale(0.4);
+      transform: scale(0.4);
+    }
+    to {
+      -webkit-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+@keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }

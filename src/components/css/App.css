@@ -1,0 +1,26 @@
+.app_title{
+    font-weight: bolder;
+    color: white;
+    align-self: center;
+    justify-self: center;
+    font-size: x-large;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app_container{
+    z-index: 2;
+}
+
+.react_toast{
+    position: absolute;
+    width: 100%;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1;
+}

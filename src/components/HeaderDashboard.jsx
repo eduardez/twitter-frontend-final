@@ -9,7 +9,7 @@ export default function HeaderDashboard(props){
 
   return (
     <Navbar color="primary" light expand="md">
-      <NavbarBrand><FaCogs color="white"/><span className="text-white"><strong> Dashboard:</strong> {sessionStorage.getItem('name')}</span></NavbarBrand>
+      <NavbarBrand><FaCogs color="white"/><span className="text-white"><strong> Usuario:</strong> {sessionStorage.getItem('name')}</span></NavbarBrand>
       <Collapse navbar>
         <Nav className="ml-auto" navbar>
           <NavItem>
